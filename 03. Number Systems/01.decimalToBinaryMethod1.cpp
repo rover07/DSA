@@ -36,25 +36,28 @@ using namespace std;
 //     int binary = decimalToBinaryMethod1(n);
 // }
 
-int decimalToBinaryMethod1(int n)
+void decimalToBinaryMethod1(int n)
 {
     int binaryno = 0;
     int i = 0;
     while (n > 0)
     {
-        int bit = n % 2;
+        int bit = n % 2; // remainder method
         binaryno = bit * pow(10, i) + binaryno;
         // added to reverse bits
         i++;
-        n = n / 2;
+        n = n / 2; //remainder method
     }
-    return binaryno;
+    // return binaryno;
+    cout << binaryno;
 }
 
 int main()
 {
     int n;
     cin >> n;
-    int answer = decimalToBinaryMethod1(n); // now we have to reverse answer to get proper form
-    cout << answer;
+    decimalToBinaryMethod1(n);
+
+    // int answer = decimalToBinaryMethod1(n); // now we have to reverse answer to get proper form
+    // cout << answer;
 }
