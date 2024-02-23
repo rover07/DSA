@@ -20,7 +20,7 @@ int main()
         if (target == arr[i])
         {
             flag = 1;
-            break;
+            break; 
         }
     }
     if (flag == 1)
