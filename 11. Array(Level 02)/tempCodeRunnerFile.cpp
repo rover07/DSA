@@ -1,2 +1,3 @@
-#include <iostream>
-using namespace std;
+
+            ans.push_back(arr[i]);
+        
