@@ -1,5 +1,2 @@
-
-    for (int i = 0; i < 4; i++)
-    {
-        cout << ans[i] << " ";
-    }
+nt i = 9;
+    // vector<vector<int>> arr(3, vector<int>(5, i
