@@ -1,0 +1,1 @@
+After this warmup question of sorting 0,1, and 2 we solved leetcode in this video
