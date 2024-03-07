@@ -1,54 +1,78 @@
 // 0,0,0,0,0,0,1,1,1.
 #include <iostream>
+#include <vector>
+#include <limits.h>
 using namespace std;
 
-#include <iostream>
-using namespace std;
-
-void countZeroToOne(int arr[], int size)
+void countZeroToOne(vector<int> arr, int size)
 {
-    int negativeCount = 0;
-    int positiveCount = 0;
-    for (int i = 0; i < size; i++)
+    int j = 0;
+    for (int index = 0; index < size; index++)
     {
-        if (arr[i] < 0)
+        if (arr[index] < 0)
         {
-            // zeroCount = zeroCount + 1;
-            negativeCount++;
-            // this works too
-        }
-        else
-        {
-            positiveCount++;
+            swap(arr[index], arr[j]);
+            j++;
         }
     }
-    cout << "Negative count is:" << negativeCount << endl;
-    cout << "Positive Count is:" << positiveCount << endl;
-
-    int temp[size];
-    for (int i = 0; i < size; i++)
-    {
-        if (arr[i] < 0)
-        {
-            for (int i = 0; i < size; i++)
-            {
-                temp[i] = arr[i];
-            }
-        }
-    }
-}
-
-int main()
-{
-    int arr[] = {23, -7, 12, -10, -11, 40, 60};
-    // zero=6
-    // one=3
-    int size = 9;
-    countZeroToOne(arr, size);
-
     for (int i = 0; i < size; i++)
     {
         cout << arr[i] << " ";
     }
+}
+int main()
+{
+    vector<int> arr = {23, -7, 12, -10, -11, 40, 60};
+
+    int size = arr.size();
+    countZeroToOne(arr, size);
+
     return 0;
 }
+//
+//
+//
+// all trial and error stuffs i dont need right now
+//
+//
+//
+// {
+//     // if (arr[left] > arr[right])
+//     // {
+//     //     swap(arr[left], arr[right]);
+//     //     right--;
+//     // }
+//     // else
+//     // {
+//     //     left++;
+//     // }
+//     // for (int i = 0; i < size; i++)
+
+//     if (arr[index] == arr[left])
+//     {
+//         index++;
+//     }
+//     if (arr[index] < arr[left])
+//     {
+//         swap(arr[index], arr[left]);
+//         left++;
+//         index++;
+//     }
+//     else if (arr[index] > arr[right])
+
+//     {
+//         swap(arr[index], arr[right]);
+//         right--;
+//     }
+// }
+
+// // for (int i = 0; i < size; i++)
+// // {
+// //     if (arr[i] > INT_MIN)
+// //     {
+// //         max = arr[i];
+// //     }
+// //     // else{
+// //     //     swap(arr[i],max);
+// //     // }
+// // }
