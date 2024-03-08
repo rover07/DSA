@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 // void prime(int start)
 // {
@@ -25,17 +26,19 @@ using namespace std;
 //     return 0;
 // }
 
-bool checkPrime(int num)
+bool checkPrime(int &num)
 {
-    int i = 2;
     for (int i = 2; i < num; i++)
+    // for (int i = 2; i < sqrt(n); i++)
+
     {
+
         if (num % i == 0)
         {
-            return false;
+            return 0;
         }
     }
-    return true;
+    return num;
 }
 int main()
 {
@@ -45,10 +48,10 @@ int main()
     for (int i = 2; i < num; i++)
     {
         bool ans = checkPrime(i);
-        if (ans)
+        if (ans == 1)
         {
             cout << i << " ";
         }
-    }
+        }
     return 0;
 }
