@@ -1,4 +1,2 @@
- else
-        {
-            cout << "Target not found!";
-        }
+;
+    cout << ans;
