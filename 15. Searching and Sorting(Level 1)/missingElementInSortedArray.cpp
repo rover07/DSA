@@ -17,7 +17,7 @@ int missingElementInSortedArray(int arr[], int size)
         else
         {
             // stored index
-            ans = mid;
+            ans = mid;+
             end = mid - 1;
         }
         mid = (start + end) / 2;
