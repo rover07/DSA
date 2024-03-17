@@ -1,1 +1,1 @@
-rows * cols
+nums[mid] <
