@@ -12,7 +12,7 @@ int decimalToBinaryMethod2(int number)
     int i = 0;
     while (number > 0)
     {
-        int bit = (number & 1);                 // pehle ulta kia here
+        int bit = (number & 1);                 // as it is value aya just of last digit
         binaryno = bit * pow(10, i) + binaryno; // then again ulta kia
         i++;
         number = number >> 1;
