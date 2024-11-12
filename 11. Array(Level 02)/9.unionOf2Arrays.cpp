@@ -20,7 +20,7 @@ int main()
                 ans.push_back(arr[i]);
                 arr[i] = INT_MIN;
             }
-               }
+        }
     }
     for (int i = 0; i < sizeArr; i++)
     {

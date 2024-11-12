@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     // int arr[5];
-    // cout << "size:" << sizeof(arr) << endl;
+    cout << "size:" << sizeof(arr) << endl;
     // cout << "Address:" << addressof(arr) << endl;
     // cout << "Address in another way:" << &arr << endl;
     // cout << "Address in another way:" << arr;
@@ -19,18 +19,18 @@ int main()
     //     cout << arr[i] << endl;
     // }
 
-    // Taking input in array
-    int arr[5];
-    int n = 5;
-    for (int i = 0; i < n; i++)
-    {
-        cout << "ENTER VALUES:";
-        cin >> arr[i];
-    }
-    // for printing array
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << " ";
-    }
-    return 0;
+    // // Taking input in array
+    // int arr[5];
+    // int n = 5;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << "ENTER VALUES:";
+    //     cin >> arr[i];
+    // }
+    // // for printing array
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << arr[i] << " ";
+    // }
+    // return 0;
 }

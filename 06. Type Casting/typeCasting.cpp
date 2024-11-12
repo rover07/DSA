@@ -6,11 +6,12 @@ int main()
 
     // int num1 = 5;
     // float num2 = 9.8;
-    // float result = num1 + num2;
-    // int result = num1 + num2;
-    // cout << num1+num2;
+    // float result1 = num1 + num2;
+    // int result2 = num1 + num2;
+    // cout << result1 << endl
+    //      << result2;
 
-    // char to int
+    // // char to int
     // char ch = 'B';
     // int idk = ch;
     // int yessir = ch + 1;
@@ -22,17 +23,19 @@ int main()
     // char c=a;
     // cout<<c;
 
-    // Explicit type conversion
+    //    // Explicit type conversion
     // int a = 5;
     // float b = 4.5;
     // float result = a + (int)b;
     // cout << result << endl;
     // cout << a + (int)b;
 
-    // Example:
+    // // Example:
     int a = 100;
     int b = 9.8;
-    float result = a / (float)b;
-    cout << result;
+    float resultFloat = a / (float)b;
+    int resultInt = a / (float)b;
+    cout << resultFloat << endl;
+    cout << resultInt;
     return 0;
 }

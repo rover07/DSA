@@ -15,13 +15,10 @@ using namespace std;
 //          return false;
 //      }
 //  }
+//
+//
 
-//
-//
 // Using Bitwise coz its fast being low level
-//
-//
-
 bool oddEven(int num)
 {
     if ((num & 1) == 0)

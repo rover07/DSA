@@ -5,7 +5,7 @@ using namespace std;
 void binToDecimal(int binaryNo)
 {
     int decimal = 0;
-    int i = 0;
+    int i = 0; // power
     while (binaryNo)
     {
         int bit = (binaryNo & 1);

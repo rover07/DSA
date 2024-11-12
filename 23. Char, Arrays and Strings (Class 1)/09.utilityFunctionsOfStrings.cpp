@@ -32,12 +32,44 @@ int main()
 
     // cout << str << endl;
 
-    // insert()
-    string name = "Naman Rajput";
-    // name.insert(5, "Kumar");
-    string middle = "Kumar ";
-    name.insert(6, middle);
-    cout << name;
+    // // insert()
+    // string name = "Naman Rajput";
+    // // name.insert(5, "Kumar");
+    // string middle = "Kumar ";
+    // name.insert(6, middle);
+    // cout << name;
 
+    // // push back
+    // string name = "Hello";
+    // name.push_back('w');
+    // name.pop_back();
+    // cout << name;
+
+    // // find
+    // string str1 = "there is a pen lying there.";
+    // string str2 = "pen";
+    // string str3 = "than";
+    // cout << str1.find(str2) << endl;
+    // cout << str1.find("is");
+
+    // string str1 = "there is a pen lying there.";
+    // string str2 = "pens";
+    // string str3 = "pens";
+    // // find,npos stuff
+    // // if (str1.find(str2) == string::npos)
+    // // {
+    // //     cout << "Not found!";
+    // // }
+    // // else
+    // //     cout << "found!";
+
+    // // compare
+    // cout << str1.compare(str2) << endl;
+    // cout << str2.compare(str1) << endl;
+    // cout << str2.compare(str3) << endl;
+
+    // Substring
+    string str = "This is not a substringhhhhhhhhhhhhh";
+    cout << str.substr(12, 11);
     return 0;
 }

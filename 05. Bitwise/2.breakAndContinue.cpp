@@ -18,7 +18,10 @@ int main()
         cout << i << endl;
 
         if (i == 3)
+        {
             continue;
+        }
+        cout << "hi";
     }
-    return 0; 
+    return 0;
 }

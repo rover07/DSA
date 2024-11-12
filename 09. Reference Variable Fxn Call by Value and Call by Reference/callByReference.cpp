@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-void idk(int &a)
+void idk(int &a) // pass by reference
+// void idk(int a) // pass by value
 {
     a = a + 2;
     cout << a << endl;

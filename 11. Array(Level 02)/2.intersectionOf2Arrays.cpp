@@ -18,7 +18,7 @@ int main()
                 // brr[j] = -1;
                 // brr[j] = INT_MIN; in case of mixed array of +ve and -ve numbers
                 ans.push_back(arr[i]);
-                break; // we can use break too 
+                break; // we can use break too
             }
         }
     }

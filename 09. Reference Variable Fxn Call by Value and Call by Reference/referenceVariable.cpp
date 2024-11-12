@@ -5,8 +5,12 @@ int main()
     int a = 5;
     int &k = a;
     int &c = k;
-    // cout << a;
-    cout << k;
+
+    // a++;
+    // k++;
+    c++;
+    cout << a << endl;
+    cout << k << endl;
     cout << c;
     return 0;
 }

@@ -5,7 +5,7 @@ using namespace std;
 bool checkPrime(int n)
 {
 
-    // If n is divisible by numbers in range (2 to n-1), then it is not a prime number hence we have returned false, esle its prime
+    // If n is divisible by numbers in range (2 to n-1), then it is not a prime number hence we have returned false, else its prime
     //
     // for (int i = 2; i < n; i++)
 

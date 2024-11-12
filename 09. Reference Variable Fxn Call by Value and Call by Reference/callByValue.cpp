@@ -4,7 +4,7 @@ using namespace std;
 void passByValue(int a)
 {
     a = a + 99;
-    cout << a;
+    cout << a << endl;
 }
 
 int main()

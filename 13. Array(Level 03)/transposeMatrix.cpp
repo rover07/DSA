@@ -14,7 +14,7 @@ void transposeMatrix(int arr[][3], int rows, int cols)
     //  {
     //      for (int j = 0; j < cols; j++)
     //      {
-    //          transpose[i][j] = arr[j][i];
+    // transpose[j][i] = arr[i][j];
     //      }
     //  }
     //  cout << "Transpose of the marix is:" << endl;
@@ -33,13 +33,13 @@ void transposeMatrix(int arr[][3], int rows, int cols)
 
     //
     //
-    for (int i = 0; i < cols; i++)
-    {
-        for (int j = i; j < rows; j++)
-        {
-            swap(arr[i][j], arr[j][i]);
-        }
-    }
+    // for (int i = 0; i < cols; i++)
+    // {
+    //     for (int j = i; j < rows; j++)
+    //     {
+    //         swap(arr[i][j], arr[j][i]);
+    //     }
+    // }
     cout << "Transpose of the marix is:" << endl;
     for (int i = 0; i < cols; i++)
     {

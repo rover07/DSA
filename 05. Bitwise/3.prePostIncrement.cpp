@@ -14,11 +14,10 @@ int main()
     // {
     //     cout << i;
     // }
-    //   for (int i = 0; i < 4; ++i)
-    //     {
-    //         cout << i;
-    //     }
+    for (int i = 0; i < 4; ++i)
+    {
+        cout << i;
+    }
 
-   
     return 0;
 }

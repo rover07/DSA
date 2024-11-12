@@ -37,7 +37,7 @@ int main()
     cout << "Enter target:";
     cin >> target;
     int ans = linearSearch(arr, size, target);
-    if (ans == true) //We can use 1 and o for true and false respectively too/
+    if (ans == true) // We can use 1 and o for true and false respectively too/
     {
         cout << "Target Found!";
     }

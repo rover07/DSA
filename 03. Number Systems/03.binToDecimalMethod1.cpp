@@ -20,7 +20,7 @@ int main()
 {
     int binaryNo;
     cout << "Enter binary number to be converted";
-    cin >> binaryNo; 
+    cin >> binaryNo;
     binToDecimal(binaryNo);
     return 0;
 }

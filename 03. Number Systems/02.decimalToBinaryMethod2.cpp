@@ -13,7 +13,7 @@ int decimalToBinaryMethod2(int number)
     while (number > 0)
     {
         int bit = (number & 1);                 // as it is value aya just of last digit
-        binaryno = bit * pow(10, i) + binaryno; // then again ulta kia
+        binaryno = bit * pow(10, i) + binaryno; // ulta kia as upar wala last to first digit dega ie. reversed dega toh usko firse ulta karna padega
         i++;
         number = number >> 1;
     }
