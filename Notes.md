@@ -1,4 +1,4 @@
-# Headers and their uses
+# Headers and their uses.
 
 - `<limits.h>` - INT_MIN, INT_MAX
 - `<math>/<cmath> - min(), max()`
