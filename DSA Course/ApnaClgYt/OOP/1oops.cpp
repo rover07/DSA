@@ -37,14 +37,24 @@ public:
   // // // Altering the above parameterised constructor to demonstrate this pointer
   Teacher(string name, string dept, string subject, double salary) // This here is parameterised constructor
   {
-    //  Here, it becomes confusing as name on left belongs to what(Object or Parameter) and right one belons to what(Object or Parameter)
-    // By using (this ->), we are giving context that the property belongs to Object
-    // "this" points to the memory of the object. It is an pointer which is created automatically and points to the "calling object". Here the calling object is : "t1" object for which this constructor is called
+    //  Here, it becomes confusing whether name on left belongs to what(Object or Parameter)? and right one belongs to what(Object or Parameter)?
+    // By using (this ->), we are giving context that the property belongs to Object ie. it is object's property
+    // "this" points to the memory of the object. It is an pointer which is created automatically and points to the "calling object". Here the calling object is : "t2" object for which this constructor is called
     cout << "Inside parameterised Constructor using This pointer" << endl;
     this->name = name;
     this->dept = dept;
     this->subject = subject;
     this->salary = salary;
+  }
+
+  // // // //Custom Copy Constructor: creating explicitly and not default
+  Teacher(Teacher &originalObj) // passing by reference
+  {
+    cout << "This is custom copy constructor" << endl;
+    this->name = originalObj.name;
+    this->dept = originalObj.dept;
+    this->subject = originalObj.subject;
+    this->salary = originalObj.salary;
   }
 
   //
@@ -74,6 +84,7 @@ public:
     cout << "Name:" << name << endl;
     cout << "Dept:" << dept << endl;
     cout << "Salary:" << salary << endl;
+    cout << endl;
   }
 };
 
@@ -87,15 +98,19 @@ int main()
   // t1.dept = "ENTC";
   // t1.subject = "Electronics";
   // // t1.salary = 25000; // // Cannot access as this is private
-  // t1.setSalary(25000);
+  // t1.setSalary(25000); // initializing value using setter functions.
 
   // cout << "Name:" << t1.name << endl;
-  // cout << "Salary:" << t1.getSalary() << endl;
+  // cout << "Salary:" << t1.getSalary() << endl; // Calling using setter function
   // cout << "Age:" << t1.age; // Default age is 19 due to constructor
 
   // // // Calling Parameterised Constructor
   Teacher t2("Rover", "Mechanical", "Fluid Dynamics", 100000); // parameterised-constructor is called here. Instead of initializing default values inside constructor, we are passing them as parameters here
-  // Even to print values, we can create a function inside the class, here we have used getInfo();
+  // Even to print values, we can create a function inside the class, here we have used getInfo(); ie. male use of getters
   t2.getInfo();
+
+  // // // Copy Constructor
+  Teacher t3(t2); // default copy constructor invoked/called
+  t3.getInfo();
   return 0;
 }

@@ -1,1 +1,1 @@
-&a
+else "Prime";

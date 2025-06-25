@@ -78,7 +78,7 @@
 
 // void change(int *ptr)
 // {
-//   // We are defererencing ptr as we wamt to change value not address
+//   // We are defererencing ptr as we want to change value not address
 //   *ptr = 20;
 // }
 // int main()
@@ -101,10 +101,10 @@
 
 //   // // changing the value stored in ptr pointer is possible
 //   int a = 10, b = 20;
-//   int *ptr = a;
+//   int *ptr = &a;
 //   ptr = b;
 
-//   // // The same is not possible in array as it is a constant pointer.
+//   // // The same is not possible in array as it is a constant pointer ie. doesnt change.
 //   int c = 30;
 //   arr = &c; // Error: expression must be a modifiable lvalueC
 //   return 0;
