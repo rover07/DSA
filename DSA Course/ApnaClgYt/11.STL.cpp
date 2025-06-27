@@ -4,6 +4,9 @@
 #include <deque>
 #include <queue>
 #include <map>
+#include <unordered_map>
+#include <set>
+#include <algorithm>
 
 using namespace std;
 
@@ -104,4 +107,62 @@ using namespace std;
 //   // reverse order priority queue
 //   priority_queue<int, vector<int>, greater<int>> t;
 // }
-  
+
+// int main()
+// {
+//   // // // Other maps
+
+//   // Multimap
+//   multimap<string, int> m;
+
+//   m.insert({"tv", 100});
+//   m.insert({"tv", 100});
+//   m.insert({"tv", 100});
+//   m.insert({"tv", 100});
+//   // o/p: tv 100  tv 100 tv 100 tv 100
+
+//   // After erasing tv, all the keys are erased
+//   m.erase("tv");
+
+//   // To delete 1 key, we need to pass iterator
+//   m.erase(m.find("tv"));
+//   for (auto p : m)
+//   {
+//     cout << p.first << " " << p.second << endl;
+//   }
+// }
+
+// int main()
+// {
+//   set<int> s;
+//   s.insert(1);
+//   s.insert(1);
+//   s.insert(1);
+//   s.insert(1);
+//   s.insert(2);
+//   s.insert(3);
+//   s.insert(7);
+//   s.insert(4);
+//   s.insert(11);
+
+//   cout << "lower bound: " << *(s.lower_bound(6)) << endl; // 7 if 6 not there
+//   cout << "upper bound: " << *(s.upper_bound(7)) << endl; // 11, as its next to 7
+
+//   for (int val : s)
+//   {
+//     cout << val << endl;
+//   }
+//   cout << "size of set: " << s.size();
+// }
+
+int main()
+{
+  vector<pair<int, int>> vec = {{2, 3}, {4, 1}, {22, 122}};
+
+  sort(vec.begin(), vec.end());
+
+  for (auto p : vec)
+  {
+    cout << p.first << " " << p.second << endl;
+  }
+}
