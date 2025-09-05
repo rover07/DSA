@@ -24,10 +24,15 @@ public:
 int main()
 {
   Child child1;
-  Parent *ptr; // This pointer points to parent class
+  Parent *ptr; // This pointer points to parent class object
 
+  // Repointing the pointer to object of Child Class
+
+  // // Runtime Binding
   ptr = &child1; // We are binding parent class's pointer to child class's object
-                 // // This here is runtime binding, as assignment of address of child 1 will be at runtime.
+                 // // This here is runtime binding, as assignment of address of child1 will be at runtime.
   ptr->hello();  // Virtual Function
+
+  // // Here, is the binding wasnt done, default parent class was there, then the parent's class function would've been called
   return 0;
 }

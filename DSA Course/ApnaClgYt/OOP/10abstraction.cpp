@@ -1,8 +1,9 @@
-// // // Way 1: Using Access Sprcifiers
+// // // Way 1: Using Access Specifiers
 
 // // // Way 2: Using Abstract Classes & Pure Virtual Functions/Abstract Functions.
-// // Abstract Class: The class which is abstract/definitionless Eg. class Shape, here shape is not defined.
-// // Virtual Fxn: same as above but for functions. Eg. draw()
+
+// // Abstract Class: The class which is abstract/definitionless Eg. class Shape, here shape is not defined. It doesn't have its object + It just provides blurprint for the child class
+// // Virtual Fxn: same as above but for functions. Eg. draw(), where there is a definitionless function.
 
 #include <iostream>
 

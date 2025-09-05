@@ -1,50 +1,33 @@
 #include <iostream>
 using namespace std;
+// Static Objects
 
-// // // // // static variabie in function
-// void counter()
-// {
-//   static int count = 0; // This will be created and initialized only once
-//   count++;
-//   cout << "Count is:" << count << endl;
-// };
-
-// int main()
-// {
-//   counter();
-//   counter();
-//   counter();
-//   return 0;
-// }
-
-//
-//
-//
-// // // // // static variable in Class
-
-class Example
+class Demo
 {
 public:
-  //
-  // static const int x = 0; // to initialize static variable here in CLASS, i have to make it "const" too.
-  //
-  static int x;
-  //
-  // // Without const, i can only define here and initialize outside of class using ::
+  Demo()
+  {
+    cout << "Constructor created\n";
+  }
+  ~Demo()
+  {
+    cout << "Destructor \n";
+  }
 };
 
-// // To initialize without const keyword, we have to initialize the variable outside class.
-// // We are doing this below
-int Example::x = 0; // This is initialization here, which means "x" which belongs to class "Example" is initialized
-// // Now "x", is a variable of class and not object
 int main()
 {
-  Example eg1;
-  Example eg2;
-  Example eg3;
 
-  cout << eg1.x++ << endl; // 0
-  cout << eg2.x++ << endl; // 1
-  cout << eg3.x++ << endl; // 2
+  int a = 0;
+  if (a == 0)
+  {
+    // Demo d1;
+    static Demo d1;
+  }
+  cout << "Code ending\n";
   return 0;
 }
+// using static, the object stays alive until the code runs irrespective of scope
+
+// // Normal Output: Constructor created, Destructor created, Code ending %
+// // After Static:

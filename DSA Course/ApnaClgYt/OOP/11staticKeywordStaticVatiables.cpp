@@ -35,8 +35,8 @@ public:
 
 // // To initialize without const keyword, we have to initialize the variable outside class.
 // // We are doing this below
-int Example::x = 0; // This is initialization here, which means "x" which belongs to class "Example" is initialized
-// // Now "x", is a variable of class and not object
+int Example::x = 0; // This is initialization here, which means "x" which belongs to class "Example" is initialized.
+// // Now "x", is a variable of class and not for that particular object ie. As a part of class, it is shared by objects of that class.
 int main()
 {
   Example eg1;
